@@ -1,0 +1,51 @@
+Child: >
+---------
+You can use > operator to nest elements inside each other
+example :- div>p>a
+    output :- <div>
+                <p><a href=""></a></p>
+            </div>
+
+Sibling: +
+-----------
+Use + operator to place elements near each other, on the same level
+example :- div+p
+    output :- <div></div>
+             <p></p>
+
+Multiplication: *
+------------------
+With * operator you can define how many times element should be outputted
+
+example :- ul>li*5
+    output :-<ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+Grouping: ()
+------------
+Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations
+example :- div>(header>ul>li*2>a)+footer>p
+    output :-<div>
+                <header>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </header>
+                <footer>
+                    <p></p>
+                </footer>
+            </div>
+
+ID and CLASS
+------------
+In CSS, you use elem#id and elem.class notation to reach the elements with specified id or class attributes. In Emmet, you can use the very same syntax to add these attributes to specified element
+
+example :- div.class+div#id
+    output :-<div class="class"></div>
+             <div id="id"></div>

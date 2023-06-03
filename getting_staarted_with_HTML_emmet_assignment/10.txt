@@ -1,0 +1,7 @@
+Global attruibutes:- this are the kind of attribute which can be used in the any tags of the html
+
+example:- Class
+          ID
+          Title
+          Tabindex
+          Hidden

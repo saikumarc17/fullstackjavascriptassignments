@@ -1,0 +1,7 @@
+4 tags we learned in this module are :-
+1) <p></p> - (paragrabh tag) = it is called as paragraph tag , this tags are block level elements , this tags are mostly used in creating paragraphs 
+2) <div></div> - it is called as division tag 
+                 it is used to create continers or group the elements like a, img , p etc
+3) <h1></h1> to <h6></h6> -(heading tag) - it is used to create the headings in the web pages 
+                                           as the h(number) increases text size decreases
+                                           text will be bold with large text  size

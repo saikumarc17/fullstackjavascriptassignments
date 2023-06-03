@@ -1,0 +1,18 @@
+
+Tags :
+        A tag is a special word enclosed in angle-brackets < >. A tag tells the browser to perform an action as asked by the special word. The special word may be written either in lower case or upper case. The browser will respond to both the cases equally
+        The HTML tags are normally comes in pair of start and end tag(an opening tag and closing tag). While the start tag is written in the beginning of the element as <SpecialWord>, the end tag is written at the completion of the element as </SpecialWord>
+        For example: <br> When you want to begin with writing source code using HTML, you write the start tag as <HTML> and when you have completely written in the HTML document and want to end it, you write the end tag as </HTML> i.e. insert a forward slash followed by HTML in angled brackets
+
+ Elementsb :
+      HTML elements are the building blocks of web pages. An HTML element is made up of a start tag, content, and an end tag (in most cases)
+       
+       Example: <p>I am happy to learn Web Development.</p>. In this example, the opening tag is <p> and the closing tag is </p>. The content along with the tags is the paragraph element.
+       
+Attributes :
+        The characteristics or the features of a tag are defined by an attribute. An attribute is used inside a tag. An attribute always takes a value to help the browser perform the specific task in a particular direction. There may be more than one attribute used inside a tag.
+        An element is a combination of a start tag, the text(we also use text to insert graphics) and the end tag
+
+        For example
+
+        <a href=""> In  anchor tag href is an attribute which take the url to redirect</a>

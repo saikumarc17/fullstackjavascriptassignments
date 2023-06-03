@@ -1,0 +1,6 @@
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow by wrirting code abbreviations
+uses of emmet:-
+1) it drastically reduces the coding time 
+2) it increases productivity
+3) reduces Errors
+4) make code more redable and Efficient

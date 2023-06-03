@@ -1,0 +1,7 @@
+self closing tags :-
+self closing tags are kind of tags whih will not have any closing tags 
+example :- input , br , hr, img
+
+metatags:- meta tags are used to provide additional information to search engine about the webpage
+           this tags will not effect any rendering of web pages
+           this tags are placed in the head section of the html elements
