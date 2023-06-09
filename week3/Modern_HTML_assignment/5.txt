@@ -1,0 +1,25 @@
+In HTML, the term "tab index" refers to the ability to navigate through elements within an HTML  using the keyboard. 
+It provides a way for users who rely on keyboard navigation or assistive technologies to access and interact with tabular data more efficiently.
+
+To enable table indexing in HTML, you can use the `tabindex` attribute. The `tabindex` attribute specifies the order in which elements receive focus when the user navigates using the "tab" key. 
+By setting appropriate tabindex values for the table cells, you can define a logical tab order for the table.
+
+
+example :-
+--------
+
+
+<table>
+  <tr>
+    <td tabindex="1">Cell 1</td>
+    <td tabindex="2">Cell 2</td>
+  </tr>
+  <tr>
+    <td tabindex="3">Cell 3</td>
+    <td tabindex="4">Cell 4</td>
+  </tr>
+</table>
+
+
+In the above example, the `tabindex` attribute is set on each table cell (`<td>`) to define the order in which they receive focus. 
+When the user presses the "tab" key, focus will move sequentially through the cells based on their tabindex values.

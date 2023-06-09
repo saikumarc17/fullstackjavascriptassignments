@@ -1,0 +1,17 @@
+Improving the accessibility of HTML is crucial for ensuring that web content is accessible to all users, including those with disabilities. Here are three ways to enhance HTML accessibility:
+
+1) Using semantic in HTML : Sementic HTML involves using appropriate HTML elements to convey the meaning and structure of content .
+                            By using elements like headings (`<h1>` to `<h6>`), paragraphs (`<p>`), lists (`<ul>`, `<ol>`, `<li>`), and others, you provide clear and meaningful information to assistive technologies such as screen readers. 
+                            Using semantic HTML helps users navigate and understand the content more easily.
+
+2) Providing alt text in images : poviding alt text in images will help to describe about the image to Screenreaders.
+                                 It also help in displaying image description in case of image is not loaded properly
+
+3)Implement Keyboard Accessibility: Many users rely on keyboard navigation instead of a mouse or other pointing devices. 
+                                    It's essential to ensure that all interactive elements and functionality in your HTML can be accessed and operated using only a keyboard. 
+                                    Properly manage focus styles, provide keyboard shortcuts, and use tabindex appropriately to ensure that keyboard users can navigate through the content and interact with form controls and other interactive elements.
+
+4)Test with Assistive Technologies: To truly gauge the accessibility of your HTML content, it's important to test it using assistive technologies such as screen readers, magnifiers, or voice recognition software. 
+                                    By simulating how users with disabilities interact with your website, you can identify any accessibility barriers or issues that need to be addressed. 
+                                    These tests will help you validate the effectiveness of your accessibility enhancements and make further improvements if necessary.
+

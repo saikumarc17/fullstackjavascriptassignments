@@ -1,0 +1,16 @@
+1) `<header>`: The `<header>` tag represents the introductory or navigational content at the top of a section or webpage. 
+ It typically contains branding, logos, page titles, navigation menus, or other related information.
+
+2) `<nav>`: The `<nav>` tag is used to define a section of the document that contains navigation links. 
+It represents a collection of navigation elements, such as menus, lists of links, or site maps, allowing users to navigate different sections or pages of a website.
+
+3)`<footer>`: The `<footer>` tag represents the footer section of a document or a section. It typically contains information about the author, copyright notices, contact details, site maps, or links to related documents. 
+            The `<footer>` tag is usually placed at the bottom of the webpage.
+
+
+4) `<section>`: Represents a standalone section of content that is semantically related,
+                 such as chapters, tabbed content, or thematic groups.
+
+
+5) `<main>`: The `<main>` tag represents the main content area of a document. 
+             It should contain the primary content of the webpage and must not include content that is repeated across a set of documents, such as site navigation, footer, or header sections.

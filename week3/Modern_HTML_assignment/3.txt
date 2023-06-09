@@ -1,0 +1,13 @@
+Web accessibility refers to the inclusive practice of designing and developing websites and web applications that can be accessed and used by all individuals, including those with disabilities. It aims to eliminate barriers and ensure equal access to information, functionality, and services on the web.
+
+some of the examples of the Web accessibility are :-
+
+1) Screen Readers: Screen readers are software applications that convert text into synthesized speech. They read aloud the content of web pages, enabling blind or visually impaired individuals to access and navigate websites
+
+2) Screen Magnifiers: Screen magnifiers help individuals with visual impairments by enlarging portions of the screen. They allow users to zoom in on text or images, making them easier to see and read.
+
+3) Voice Recognition Software: Voice recognition software, also known as speech recognition software, enables individuals with mobility or dexterity impairments to control and interact with a computer using their voice. It allows users to navigate websites, fill out forms, and perform various tasks hands-free.
+
+4) Alternative Text (Alt Text): Alt text is used to describe images on a web page. Screen readers read out the alt text, allowing individuals who are blind or visually impaired to understand the context and purpose of the image.
+
+5) Closed Captioning: Closed captioning provides synchronized text for video and audio content. It enables individuals who are deaf or hard of hearing to follow along with the dialogue and audio cues.

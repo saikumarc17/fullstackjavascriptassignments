@@ -1,0 +1,8 @@
+The benfits of using Sementic tags in our webpage :-
+
+1) It improves Accessibility for users with disabilities, allowing them to access and understand the content more effectively
+2) It improves Search engine Optimization 
+3) It improves Code redability and maintability 
+4) Improved User Experience by providing clear and meaningful content to visiters by quickly and easily identify and navigate different sections of the page, improving usability and overall user satisfaction.
+5) Semantic tags adhere to established HTML standards and conventions. Using these tags promotes consistency and standardization in web development practices, making your code more reliable, interoperable, and compliant with best practices.
+
