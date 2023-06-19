@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hover to unveil</title>
+
+        <style>
+            h2{
+                text-align: center;
+            }
+            .card{
+                height: 280px;
+                width: 200px;
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                position: absolute;
+            }
+            
+            .cards-1{
+                background-color: #1b98f5;
+                top: 180px;
+            }
+            .cards-2{
+                background-color: #1faa59;
+                top: 240px;
+                left:40px;
+            }
+            .cards-3{
+                background-color: #f7cd2e;
+                top: 300px;
+                left: 80px;
+            }
+            .cards-1:hover,.cards-2:hover,.cards-3:hover{
+               z-index: 4;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>                                   
+            <h2>Hover To Unveil the Pokemon</h2>
+            <div class="cards-1 card">
+                <h2>Pikachu</h2>
+                <img src="peka.png" width="160" alt="">
+            </div>
+            <div class="cards-2 card">
+                <h2>Greninja</h2>
+                <img src="greninja.png" width="160" alt="">
+            </div>
+            <div class="cards-3 card">
+                <h2>Charizard</h2>
+                <img src="charizard.png" width="160" alt="">
+            </div>
+        </div>
+    </body>
+</html>

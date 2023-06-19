@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>on hover button</title>
+        <style>
+            span{
+                padding: 18px 30px;
+                background-color: #ff6666;
+            }
+            .dropdown{
+                display: inline-block;
+            }
+            .container{
+                background-color: #f9f9f9;
+                width: 200px;
+                height: 200px;
+                overflow-y: scroll;
+                position: absolute;
+                top: 40px;
+                display: none;
+            }
+            .options{
+                padding: 10px 28px;
+            }
+            .options:hover{
+                background-color: blanchedalmond;
+            }
+            .dropdown:hover .container{
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+                <span>Hover To View Options</span>
+                <div class="container" >
+                        <div class="options" >option-1</div>
+                        <div class="options" >option-2</div>
+                        <div class="options" >option-3</div>
+                        <div class="options" >option-4</div>
+                        <div class="options" >option-5</div>
+                        <div class="options" >option-6</div>
+                        <div class="options" >option-7</div>
+                        <div class="options" >option-8</div>
+                        <div class="options" >option-9</div>
+                        <div class="options" >option-10</div>
+                    </div>
+        </div>
+    </body>
+</html>
