@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>justify content</title>
+        <style>
+            body{
+                background-color: #2c2a2a;
+            }
+            h1{
+                color: #f7f7f7;
+            }
+            .container-1{
+                width: 100%;
+                margin: 20px;
+                border: 1px solid white;
+                display: flex;
+            }
+            .item{
+                background-color: aliceblue;
+                margin: 5px;
+                height: 100px;
+                width: 100px;
+                font-size: 40px;
+                font-weight: 800;
+            }
+            .start{
+                justify-content: flex-start;
+            }
+            .end{
+                justify-content: flex-end;
+            }
+            .space-between{
+                justify-content: space-between;
+            }
+            .space-around{
+                justify-content: space-around;
+            }
+            .space-evenly{
+                justify-content: space-evenly;
+            }
+            .space-center{
+                justify-content: center;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>justify-content: flex-start;</h1>
+        <div class="container-1 start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <h1>justify-content: flex-end;</h1>
+        <div class="container-1 end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+\
+        <h1>justify-content: space-between;</h1>
+        <div class="container-1 space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <h1>justify-content: space-around;</h1>
+        <div class="container-1 space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <h1>justify-content: space-evenly;</h1>
+        <div class="container-1 space-evenly">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        
+        <h1>justify-content: space-center;</h1>
+        <div class="container-1 space-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </body>
+</html>

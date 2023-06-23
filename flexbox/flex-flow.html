@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flex flow</title>
+        <style>
+            body{
+                background-color: #2c2a2a;
+            }
+            h2,h1{
+                color: #f7f7f7;
+            }
+            .container-1{
+                width: 100%;
+                margin: 20px;
+                border: 1px solid white;
+                display: flex;
+                flex-flow: row nowrap;
+
+            }
+            .item{
+                background-color: aliceblue;
+                margin: 5px;
+                height: 100px;
+                width: 100px;
+                font-size: 40px;
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>note:- flex flow is a combination of flex direction and flex wrap</h2>
+        <h1>basic flex flow</h1>
+        <div class="container-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </body>
+</html>

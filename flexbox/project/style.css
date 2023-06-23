@@ -1,0 +1,45 @@
+body{
+    background-color: #0A192F;
+    color: #CCD6F6;
+    margin: 0 12%;
+}
+.container{
+    text-align: center;
+    margin: 10px;
+}
+.container > h2 , .container > p{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.f-item{
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    background-color: #112240;
+    margin: 6px;
+}
+
+.f-item>p{
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    color: #8892B0;
+    font-size: 14px;
+}
+svg{
+    width: 100;
+    height: 100;
+    color: aqua;
+}
