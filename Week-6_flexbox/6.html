@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google search</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+                height: 100vh;
+            }
+            .main{
+                width: 60%;
+                border: 2px solid #6e7277;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                padding: 5px 5px;
+                border-radius: 50px;
+                height: 45px;
+                gap: 10px;
+                align-items: center;
+            }
+            input{
+                outline: none;
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 0;
+                font-size: 25px;
+                width: 80%;
+            }
+            .main>img{
+                width: 50px;
+                height: 50px;
+            }
+            .logo{
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <img width="400px" class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="">
+        <div class="main">
+            <img src="icons8-search-50.png" alt="search">
+            <input type="text">
+            <img  width="50px"  src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"  alt="">
+            <img  width="50px"  src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_lens_logo_icon_159340.png" alt="">
+        </div>
+    </body>
+</html>

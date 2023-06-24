@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gmail about page</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+            .header{
+                background: #fff;
+                box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10%;
+            }   
+            .gmaillogo{
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                line-height: 28px;
+                font-weight: 400;
+                font-family: "Google Sans","Roboto",Arial,sans-serif;
+            }
+            .gmaillogo>span{
+                padding-left: 10px;
+            }
+            .links{
+                display: flex;
+                align-items: center;
+            }
+            .links>a{
+                text-decoration: none;
+                padding: 15px 20px;
+                color: #1a73e8;
+                border-radius: 5px;
+                margin: 0 10px;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.1px;
+            }
+          
+            .forwork:hover{
+                background-color: #f4f8fe;
+                color: #174ea6;
+            }
+            .signin{
+                border: 1px solid #dadce0;
+            }
+            .signin:hover{
+                background-color: #f1f3f4;
+                border-color: #8ab4f8;
+                color: #174ea6;
+            }
+            .Createanaccount{
+                background-color: #0d6deb;
+                color: white !important;
+            }
+            /* features container */
+            .features-container{
+                display: flex;
+                margin: 0 10%;
+                justify-content: space-between;
+                margin-top: 3%;
+            }
+            .description{
+                width: 35%;
+                /* margin: 100px; */
+                padding: 100px;
+            }
+            .description>h1{
+                font-size: 64px;
+                line-height: 74px;
+               font-weight: 600;
+               letter-spacing: 0.5px;
+               margin: 20px;
+            }
+            .img-container{
+                width: 60%;
+            }
+            .description>.links,.description>p{
+                margin: 20px 0 20px 20px;
+            }
+            .description>p{
+                padding: 0px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+            .description>.links>.Createanaccount{
+                margin-left: 0 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="gmaillogo">
+                <img  height="30px" src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                 alt="gmail logo">
+                 <span>Gmail</span>
+            </div>
+            <div class="links">
+                <a class="forwork" href="#For_Work">For Work</a>
+                <a class="signin" href="#sign_in">Sign in</a>
+                <a  class="Createanaccount" href="#Create_an_account">Create an account</a>
+            </div>
+        </div>
+
+        <div class="features-container">
+            <div class="description">
+                <h1>Secure, smart, and easy to use email</h1>
+                <p>Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+                <div class="links">
+                    <a class="Createanaccount" href="#Create_an_account">Create an account</a>
+                    <a class="forwork" href="#Forwork">For work</a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img width="100%" src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="features image ">
+            </div>
+        </div>
+    </body>
+</html>
