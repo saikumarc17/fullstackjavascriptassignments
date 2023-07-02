@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Timetable</title>
+        <style>
+            body {
+                font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+                text-align: center;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: repeat(8,1fr);
+               
+                text-align: center;
+                background-color: #5da3fa;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid black;
+            }
+            .container>div{
+                border: 3px dotted black;
+                
+            }
+            .time{
+                background-color: #ff6666;
+                padding: 40px 0;
+                font-size: large;
+                font-weight: bold;
+            }
+            .day,.sub,.lab{
+                /* height: 50px; */
+                padding: 20px 5px;
+            }
+
+            .day{
+                background-color: #8d3daf;
+            }
+            .sub{
+                background-color: #03c6c7;
+            }
+            .lunch{
+                background-color: #edc126;
+                grid-row: span 6;
+            }
+            .lab{
+                background-color: #cad5e2;
+                grid-column: span 2;
+            }
+            .game{
+                background-color: #1faa59;
+            }
+            .day,.game,.lunch{
+                /* font-size: large; */
+                font-weight: bold;
+            }
+
+            .lunch>span{
+                font-size: 20px;
+                line-height: 65px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>School Timetable</h1>
+        <div class="container">
+            <div class="time" >TIME</div>
+            <div class="time" >08:00 AM - 09:00 AM</div>
+            <div class="time" >09:00 AM - 10:00 AM</div>
+            <div class="time" >10:00 AM - 11:00 AM</div>
+            <div class="time" >11:00 AM - 12:00 PM</div>
+            <div class="time" >12:00 PM - 02:00 PM</div>
+            <div class="time" >02:00 PM - 03:00 PM</div>
+            <div class="time" >03:00 PM - 04:00 PM</div>
+            
+            <div class="day" >Monday</div>
+            <div class="sub">English</div>
+            <div class="sub">Biology</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="lunch Chemistry"> 
+                <span>
+                     L 
+                    <br> U 
+                    <br> N 
+                    <br> C
+                    <br> H 
+                    <br>
+                </span> <br>
+                Break</div>
+            <div class="lab">Chemistry LAB</div>
+
+            <div class="day">Tuesday</div>
+            <div class="lab">Biology LAB</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="sub">English</div>
+            <div class="sub">Biology</div>
+
+            <div class="day" >Wednesday</div>
+            <div class="sub">English</div>
+            <div class="sub">Biology</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="lab game">Games</div>
+
+            <div class="day">Thursday</div>
+            <div class="lab">Biology LAB</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="sub">English</div>
+            <div class="sub">Biology</div>
+
+            <div class="day" >Friday</div>
+            <div class="sub">English</div>
+            <div class="sub">Biology</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="lab">Physics Lab</div>
+
+            <div class="day">Saturday</div>
+            <div class="lab">Biology LAB</div>
+            <div class="sub">Physics</div>
+            <div class="sub">Chemistry</div>
+            <div class="lab game">LET OFF</div>
+        </div>
+    </body>
+</html>
