@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <style>
+ body {font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;}
+            header{
+                background-color: #242b2e;
+            }
+            nav{
+                max-width: 1200px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: auto;
+                height: 40px;
+                margin: 0 auto;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            nav>div>a{
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin: 0 10px;
+            }
+            nav>div>a:hover{
+                color: #76b5d3;
+            }
+
+            nav>a{
+                background-color: #0072e1;
+                padding: 10px 30px;
+                border-radius: 5px;
+            }
+            .menu{
+                display: none;
+            }
+
+            @media screen and (max-width:800px) {
+                nav>div,nav>a{
+                    display: none;
+                }
+                .menu{
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="https://logo.com/_next/static/media/logo-color.834b40cf.svg?w=48&q=72" alt="LOGO">
+                <div>
+                    <a href="#Home">Home</a>
+                    <a href="#Blog">Blog</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+
+                <a href="#Login">Login</a>
+
+                    <img class="menu" src="icons8-hamburger-menu-50.png" alt="" width="24px" height="24px" >
+            </nav>
+        </header>
+    </body>
+</html>

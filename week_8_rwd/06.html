@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsive Footer</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+             body{
+                font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+                display: flex;
+                align-items: flex-end;
+                height: 100vh;
+            }
+            footer{
+                background-color:#121315;
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 2fr;
+                padding: 50px 10px;
+                font-size: 16px;
+                color: #a7a7a7;
+                align-items: stretch;
+                
+            }
+            footer>.item{
+                display: flex;
+                flex-direction: column;
+                padding: 0px 40px;
+                font-size: 16px;
+                
+            }
+            h1{
+                color: white;
+                font-size: 1.4em !important;
+            } 
+            .item1>h1,.item4>h1{
+                margin-bottom: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: #a7a7a7;
+                margin-top: 30px;
+                font-size: 16px;
+            }
+            a:hover{
+                color: #2a8ded;
+            }
+            .item1>p{
+                text-align: justify;
+                line-height: 2;
+            }
+            input,button{
+                font-size: 16px;
+                padding: 18px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            button{
+                background-color: #1893f7;
+            }
+            @media screen and (max-width:850px) {
+                footer{
+                    grid-template-columns: auto;
+                    overflow: scroll !important;
+                }
+                h1{
+                    margin-top: 30px;
+                }
+                body{
+                    align-items: unset;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <footer>
+            <div class="item1 item">
+                <h1>One Card</h1>
+                <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+            </div>
+            <div class="item2 item">
+                <h1>Navigation</h1>
+                <a href="#home">Home</a>
+                <a href="#AboutUs">About Us</a>
+                <a href="#Careers">Careers</a>
+                <a href="#Offers">Offers</a>
+            </div>
+            <div class="item3 item">
+                <h1>Support</h1>
+                <a href="#F.A.Q">F.A.Q</a>
+                <a href="#CookiesPolicy">Cookies Policy</a>
+                <a href="#TermsOfService">Terms Of Service</a>
+                <a href="#Support">Support</a>
+            </div>
+            <div class="item4 item">
+                <h1>Newsletter</h1>
+                <input type="email"  placeholder="Your email Id here">
+                <button>Subscribe</button>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <style>
+            body {font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;}
+            header{
+                background-color: #242b2e;
+            }
+            nav{
+                max-width: 1200px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: auto;
+                height: 40px;
+                margin: 0 auto;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            nav>div>a{
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin: 0 10px;
+            }
+            nav>div>a:hover{
+                color: #76b5d3;
+            }
+
+            nav>a{
+                background-color: #0072e1;
+                padding: 10px 30px;
+                border-radius: 5px;
+            }
+            .menu{
+                display: none;
+            }
+
+            /* main section */
+
+            .main{
+                max-width: 1200px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 20px;
+                margin:0 auto;
+                
+            }
+            .main>video,.text-content{
+                width: 600px;
+                height: 600px;
+            }
+            .text-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 600px;
+                
+            }
+            .main>.text-content>img{
+                width: 60%;
+            }
+            .text-content>h2{
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+            
+            .text-content>h1{
+                font-size: 60px;
+                margin-top: 0;
+                color: #1893f7;
+                margin-bottom: 0;
+            }
+            .text-content>h3{
+                font-size: 20px;
+                color: #1893f7;
+                margin-top: 30px 0;
+            }
+
+
+            /* main section */
+
+            /* hiddenfee */
+            .hiddenfee{
+                max-width: 1200px;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                align-items: center;
+                padding: 100px 0;
+                background-color: #000000;
+                color: white;
+            }
+
+            .hiddenfee>h1{
+                color: #383cc1;
+                font-size: 60px;
+            }
+            .hiddenfee>p{
+                font-size: 40px;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+            }
+
+            /* hiddenfee */
+
+
+
+            @media screen and (max-width:800px) {
+                nav>div,nav>a{
+                    display: none;
+                }
+                .menu{
+                    display: block;
+                    cursor: pointer;
+                }
+                .main>video{
+                    width: 100%;
+                    height: auto;
+                }
+                .hiddenfee{
+                    background-color: #fff;
+                }
+                .hiddenfee>h1{
+                    font-size: 30px;
+                }
+                
+                .hiddenfee>p{
+                    font-size: 20px;
+                    color: #000000;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="https://logo.com/_next/static/media/logo-color.834b40cf.svg?w=48&q=72" alt="LOGO">
+                <div>
+                    <a href="#Home">Home</a>
+                    <a href="#Blog">Blog</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+
+                <a href="#Login">Login</a>
+
+                    <img class="menu" src="icons8-hamburger-menu-50.png" alt="" width="24px" height="24px" >
+            </nav>
+        </header>
+        <div class="main">
+            <div class="text-content" >
+                <h2>Say Hi To</h2>
+                <h1>One Card</h1>
+                <h3>Co-branded Card Issuers :</h3>
+                <img  src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="">
+                <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+            </div>
+
+            <video autoplay loop muted>
+                <source src="say_hi_2x_d3_.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="hiddenfee">
+            <h1>No Hidden Fees Ever</h1>
+            <p>No Joining Fees.</p>
+            <p>No Annual Fees.</p>
+            <p>No Rewards Redemption Fees.</p>
+        </div>
+    </body>
+</html>
