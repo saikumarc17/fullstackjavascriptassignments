@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rotate on card hover</title>
+        <style>
+             *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+            }
+            .container{
+                background-image:linear-gradient(to right,#45a4dd , #334fc2 );
+                height: 370px;
+                width: 370px;
+                margin: 50px;
+                border-radius:8px;
+                border: 1px solid black;
+                padding: 30px;
+            }
+            .serialAndCreated{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                align-items: center;
+            }
+            .txt-white{
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+
+            }
+            ul{
+                margin-left: 55px;
+                font-size: 20px;
+            }
+            .importantdates{
+                padding: 40px 0;
+            }
+            button{
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 8px;
+                border: none;
+                margin: 60px 0px;
+                font-size: 18px;
+                font-weight: bold;
+                background-image: linear-gradient(to right,#45dddb,#33c25c);
+            }
+
+            .container:hover{
+            transform: rotate(-90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" >
+            <div class="serialAndCreated" >
+                <h2 >#01</h2>
+                <p class="txt-white" >Created On : 01/01/2023</p>
+            </div>
+            <div>
+                <h1 class="importantdates" >Important dates</h1>
+                <ul>
+                    <li>January 26 - Republic Day</li>
+                    <li>August 15 - Independence Day</li>
+                    <li>October 2 - Gandhi Jayanti</li>
+                    <li>August 29 - National Sports Day</li>
+                </ul>
+                <button >Mark As Done</button>
+            </div>
+        </div>
+    </body>
+</html>

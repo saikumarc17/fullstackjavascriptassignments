@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animated button</title>
+        <style>
+             body{
+                font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+                height: 95vh;
+                width: 95vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button{
+                border: none;
+                padding: 15px 20px;
+                color: white;
+                /* background-color: #3c34c2; */
+                background-image: linear-gradient(to right,#4567dd,#3c33c2);
+                border-radius: 8px;
+                animation: animi 1s infinite alternate;
+            }
+
+            @keyframes animi{
+                0%,
+                100% {
+                transform: translateY(-35%);
+                animation-timing-function: cubic-bezier(0.9, 0, 1, 1);
+                }50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click Me To Visit PW Skills</button>
+    </body>
+</html>

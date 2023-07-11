@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filters and animations</title>
+        <style>
+            img{
+                /* filter: brightness();blur; */
+                /* filter:hue-rotate(270deg); */
+                filter:invert();
+            }
+            .box{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: #5785db;
+                border-radius: 50%;
+                animation:   move 1s ease-in-out 3s 100 alternate;
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            }
+
+            @keyframes move{
+                from{
+                    left: 0px;
+
+                }to{
+                    left: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        width="400px"
+        height="400px"
+        alt=""> -->
+
+        <h1>Animations</h1>
+
+        <div class="box"></div>
+
+    </body>
+</html>

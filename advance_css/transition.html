@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transition</title>
+        <style>
+            nav{
+                margin: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                background-color: black;
+                margin: 0 15px;
+                padding: 15px 30px;
+                transition: all 0.5s ease-in-out;
+                border-radius: 8px;
+            }
+            a:hover{
+                background-color: aliceblue;
+                color: black;
+            }
+
+            .circle{
+                background-color: aqua;
+                width: 150px;
+                height: 150px;
+                margin:300px 300px;
+                border-radius: 50%;
+                transition: all 0.5s ease-in-out;
+            }
+            .circle:hover{
+                transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <nav><a href="#">Home</a>
+            <a href="#">Hello</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+        </nav>
+
+        <div class="circle"></div>
+    </body>
+</html>
