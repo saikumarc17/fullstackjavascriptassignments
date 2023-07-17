@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup form</title>
+        <style>
+            body{
+                    background-color: #000000;
+                    display: flex;
+                    height: 95vh;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+                }
+            div{
+                    height: auto;
+                    width: 400px;
+                    padding: 30px;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            input{
+                border: none;
+                height: 30px;
+                border:1px solid #5c5c5c;
+                outline: none;
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #5c5c5c;
+                border-radius: 5px;
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+
+            button{
+                padding: 10px;
+                font-size: 16px;
+                width: 100%;
+                background-color: #000000;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                margin-top: 10px;
+                }
+                select{
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+
+                h1{
+                    margin: 20px auto;
+                }
+                
+                label{
+                    margin-bottom: 5px;
+                }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Signup</h1>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" >
+
+            <label for="Batch">Batch:</label>
+            <select name="" id="Batch">
+                <option value="Sigma 1.0">Sigma 1.0</option>
+                <option value="Sigma 2.0">Sigma 2.0</option>
+                <option value="Sigma 3.0">Sigma 3.0</option>
+            </select>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age">
+
+            <label for="Email">Email: </label>
+            <input type="email" id="Email" >
+
+            <label for="Password">Password: </label>
+            <input type="Password" id="Password" >
+
+            <button>Signup</button>
+        </div>
+    </body>
+</html>
