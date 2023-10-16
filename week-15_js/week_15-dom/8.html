@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital clock</title>
+        <style>
+            .flex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100%;
+            }
+            #time{
+                border: 1px solid #ffffff;
+                padding: 10px;
+                border-radius: 10px;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <h1 id="time" >12 : 10 : 50</h1>
+        </div>
+
+        <script>
+            function gettime(){
+                    const date=new Date();
+                    
+                    const hour=date.getHours();
+                    const min=date.getMinutes();
+                    const sec=date.getSeconds();
+                    
+                    document.getElementById("time").innerText=`${hour} : ${min} : ${sec}`;
+                    document.body.style.backgroundColor=`#${hour}${min}${sec}`
+                }   
+              setInterval(gettime,500)
+
+
+
+
+
+        </script>
+    </body>
+</html>

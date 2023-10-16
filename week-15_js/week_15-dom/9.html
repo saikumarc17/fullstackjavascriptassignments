@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login||Logout</title>
+    </head>
+    <body>
+        <button id="Login"  onclick="login()" >Login</button>
+        <button id="Logout" onclick="logout()" >Logout</button>
+        <h2 id="message" >User Has Not logged In</h2>
+
+        <script>
+            function login(){
+                localStorage.setItem("auth","true");
+                updateStatus();
+                console.log(localStorage.getItem("auth"));
+            }
+            function logout(){
+                localStorage.setItem("auth","false");
+                updateStatus();
+                // window.location.reload();
+            }
+            
+            const mesage=document.getElementById("message");
+            function updateStatus(){
+                const loginstatus= String(localStorage.getItem("auth"));
+                if(loginstatus ==="true"){
+                mesage.innerText="User is logged In";
+            }
+            if(loginstatus ==="false"){
+                mesage.innerText="User Has Not logged In";
+            }}
+        </script>
+    </body>
+</html>

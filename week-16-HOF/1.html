@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>reverse a string</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            div{
+                border: 1px solid black;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            button{
+                padding: 10px 20px;
+            }
+            input{
+                height: 35px;
+                margin-right: 10px;
+                font-size: 16px;
+            }
+            h4{
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h4>Enter a string to reverse</h4>
+            <input type="text" name="" id="string">
+            <button id="btn" >reverse</button>
+            <h4 id="output" style="display: none;" >hello</h4>
+        </div>
+
+        <script>
+            let str=document.getElementById("string");
+
+            function reverse(){
+                let out=document.getElementById("output");
+                out.innerText=`Reversed string : ${str.value.split("").reverse().join("")}`;
+                out.style.display="block"
+            }
+            
+            document.getElementById("btn").addEventListener("click",()=>{
+                setTimeout(reverse,2000);
+            })
+        </script>
+    </body>
+</html>

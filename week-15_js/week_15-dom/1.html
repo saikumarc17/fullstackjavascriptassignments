@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>update profile</title>
+    </head>
+    <body>
+        <h1>Update Profile Picture</h1>
+        <input type="file" name="" id="profile" accept="image/*"  onchange="loadFile(event)">
+        <h1>Your Profile Picture</h1>
+        <img src="" alt="" id="profilePrev" >
+
+        <script>
+            const loadFile= (event)=>{
+                let image=document.getElementById("profilePrev");
+                image.src=URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
+    </body>
+</html>

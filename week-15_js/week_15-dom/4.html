@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            div{
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="validateform(event)" >
+            <h1>Sign Up Form</h1>
+            <div>
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Minimum 3 Characters" >
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" placeholder="Enter Your Email" >
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" id="password" placeholder="Minimum 8 Characters" >
+            </div>
+            <div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
+
+        <script>
+
+            function validateform(event){
+                // used event.preventDefault(); from stoping reloading page on submit
+                event.preventDefault();
+                const name=String(document.getElementById("Name").value);
+                // const email=document.getElementById("Email");
+                const password= String(document.getElementById("password").value);
+                if(name.length>=3 && password.length>=8){
+                    alert("Form Validation Successfull !!");
+                }else{
+                    alert("Form Validation Failed !!");
+                }
+            }
+
+        </script>
+    </body>
+</html>

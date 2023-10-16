@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="head" >heading text</h1>
+    <h2 class="user" >user text</h2>
+    <p class="class" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, quaerat.</p>
+    <script>
+        let var1=document.getElementById("head");
+        console.log(var1.innerText);
+        var1.innerText="hello";
+        
+        let var2=document.getElementsByClassName("user");
+        console.log(var2);
+        // var2[0].innerText="hello";
+        var2[0].style.color="red"
+        var2[0].style.backgroundColor="black"
+
+        let var3=document.querySelector(".class");
+        var3.style.backgroundColor="brown";
+        var3.style.color="white"
+        
+    </script>
+</body>
+</html>

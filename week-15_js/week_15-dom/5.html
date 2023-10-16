@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toggle image</title>
+        <style>
+            img{
+                margin: 30px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h1" >Your Image is visible</h1>
+        <button id="btn" >Toggle Image</button>
+        <br>
+        <img id="img"  src="./1009976.jpg" width="500px" alt="">
+        <script>
+            let btnval=document.getElementById("btn");
+            btnval.addEventListener("click",()=>{
+               if(String(document.getElementById("img").style.display)==="none"){
+                   document.getElementById("img").style.display="block";
+                   document.getElementById("h1").innerText="Your Image is visible";
+                }else{
+                   document.getElementById("h1").innerText="Your Image is Hidden";
+                   document.getElementById("img").style.display="none";
+               }
+            })
+        </script>
+    </body>
+</html>

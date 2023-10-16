@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown options iteration</title>
+    </head>
+    <body>
+        <h1>Which is favorite Programming Language : </h1>
+        <select name="" id="select">
+            <option value=""></option>
+        </select>
+
+        <script>
+            let languages=["Javascript","Java","Python","C++"];
+            for(let i=0 ; i< Number(languages.length);i++){
+               const option= document.createElement("option");
+               option.innerText=languages[i];
+               option.value=languages[i]
+               document.getElementById("select").appendChild(option)
+            }
+        </script>
+    </body>
+</html>
